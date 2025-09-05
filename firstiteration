@@ -1,0 +1,24 @@
+repositories{
+mavenCentral()
+}
+defaultConfig{
+    applicationId 'com.qualcomm.ftcrobotcontroller'
+    minSdkVersion 24
+    targetSdkVersion 28
+    multiDexEnabled true
+}
+compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+ndk {
+    abiFilters "armeabi-v7a"
+}
+
+ndk {
+    abiFilters "armeabi-v7a"
+}
+dependencies {
+    implementation 'org.ftclib.ftclib:vision:2.1.0' // vision
+    implementation 'org.ftclib.ftclib:core:2.1.1' // core
+}
